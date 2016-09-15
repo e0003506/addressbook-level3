@@ -47,11 +47,47 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
-
+`* * *` | user | edit information of person | update the contacts information
+`* *` | user | create groups for persons with commonalities | allows for easier management
+`* *` | user | add tag to a person |
+`* *` | user | edit tag of a person | update the tag of the person
+`* *` | user | delete tag of a person | remove the tag of the person
 
 ## Appendix B : Use Cases
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+
+#### Use case: Rename a person's tag
+
+**MSS**
+
+1. User requests to rename a specific person's tag
+2. Addressbook shows the persons tag if any.
+3. AddressBook prompts the user to input in the new tag.
+4. User inputs new tag (e.g. 'friends' to buddies)
+5. AddressBook upon completing input will request for confirmation.
+6. Upon user confirmation, the tag in AddressBook will be renamed.
+
+**Extensions**
+
+2a. The person does not exist
+
+> Use case ends
+
+2b. Selected person has no tag
+
+> Use case ends.
+
+3a. The given index is invalid
+
+> An error message is shown by AddressBook, user case resumes at step 2
+ 
+
+
+5a. User cancels request
+
+> Use case ends.
+ 
 
 #### Use case: Delete person
 
@@ -80,6 +116,10 @@ Use case ends.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. Should have an user friendly interface.
+6. Should come with a basic tutorial of the features so that people can learn how to use them properly.
+7. Should have fast runtime and performance.
+8. Should be open source.
 
 ## Appendix D : Glossary
 
