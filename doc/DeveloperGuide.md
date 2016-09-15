@@ -47,7 +47,12 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
-
+`* * *` | user | edit information of person | update the contacts information
+`* *` | user | create groups for persons with commonalities | allows for easier management
+`* * *` | user | find a person by tag | find a person by tag
+`* *` | user | add tag to a person |
+`* *` | user | edit tag of a person | update the tag of the person
+`* *` | user | delete tag of a person | remove the tag of the person
 
 ## Appendix B : Use Cases
 
